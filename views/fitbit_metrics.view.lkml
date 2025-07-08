@@ -1,0 +1,221 @@
+# The name of this view in Looker is "Fitbit Metrics"
+view: fitbit_metrics {
+  # The sql_table_name parameter indicates the underlying database table
+  # to be used for all fields in this view.
+  sql_table_name: `fitbitDS.fitbit_metrics` ;;
+
+  # No primary key is defined for this view. In order to join this view in an Explore,
+  # define primary_key: yes on a dimension that has no repeated values.
+
+    # Here's what a typical dimension looks like in LookML.
+    # A dimension is a groupable field that can be used to filter query results.
+    # This dimension will be called "Activity" in Explore.
+
+  dimension: activity {
+    type: string
+    sql: ${TABLE}.activity ;;
+  }
+
+  dimension: activity_calories_ds2 {
+    type: number
+    sql: ${TABLE}.Activity_CaloriesDS2 ;;
+  }
+
+  dimension: age {
+    type: number
+    sql: ${TABLE}.age ;;
+  }
+
+  dimension: calories {
+    type: number
+    sql: ${TABLE}.calories ;;
+  }
+
+  dimension: calories_burned_ds2 {
+    type: number
+    sql: ${TABLE}.Calories_BurnedDS2 ;;
+  }
+
+  dimension: corr_heart_steps {
+    type: number
+    sql: ${TABLE}.corr_heart_steps ;;
+  }
+
+  dimension: date_exer {
+    type: string
+    sql: ${TABLE}.date_exer ;;
+  }
+
+  dimension: day_exer {
+    type: number
+    sql: ${TABLE}.day_exer ;;
+  }
+
+  dimension: device {
+    type: string
+    sql: ${TABLE}.device ;;
+  }
+
+  dimension: distance {
+    type: number
+    sql: ${TABLE}.distance ;;
+  }
+
+  dimension: distance_ds2 {
+    type: number
+    sql: ${TABLE}.DistanceDS2 ;;
+  }
+
+  dimension: entropy_heart {
+    type: number
+    sql: ${TABLE}.entropy_heart ;;
+  }
+
+  dimension: entropy_setps {
+    type: number
+    sql: ${TABLE}.entropy_setps ;;
+  }
+
+  dimension: gender {
+    type: number
+    sql: ${TABLE}.gender ;;
+  }
+
+  dimension: hear_rate {
+    type: number
+    sql: ${TABLE}.hear_rate ;;
+  }
+
+  dimension: height {
+    type: number
+    sql: ${TABLE}.height ;;
+  }
+
+  dimension: id {
+    type: number
+    sql: ${TABLE}.id ;;
+  }
+
+  dimension: id_number_persona {
+    type: number
+    sql: ${TABLE}.id_number_persona ;;
+  }
+
+  dimension: id_persona {
+    type: number
+    sql: ${TABLE}.id_persona ;;
+  }
+
+  dimension: intensity_karvonen {
+    type: number
+    sql: ${TABLE}.intensity_karvonen ;;
+  }
+
+  dimension: minutes_asleep_ds2 {
+    type: number
+    sql: ${TABLE}.Minutes_AsleepDS2 ;;
+  }
+
+  dimension: minutes_awake_ds2 {
+    type: number
+    sql: ${TABLE}.Minutes_AwakeDS2 ;;
+  }
+
+  dimension: minutes_deep_sleep_ds2 {
+    type: number
+    sql: ${TABLE}.Minutes_Deep_SleepDS2 ;;
+  }
+
+  dimension: minutes_fairly_active_ds2 {
+    type: number
+    sql: ${TABLE}.Minutes_Fairly_ActiveDS2 ;;
+  }
+
+  dimension: minutes_light_sleep_ds2 {
+    type: number
+    sql: ${TABLE}.Minutes_Light_SleepDS2 ;;
+  }
+
+  dimension: minutes_lightly_active_ds2 {
+    type: number
+    sql: ${TABLE}.Minutes_Lightly_ActiveDS2 ;;
+  }
+
+  dimension: minutes_rem_sleep_ds2 {
+    type: number
+    sql: ${TABLE}.Minutes_REM_SleepDS2 ;;
+  }
+
+  dimension: minutes_sedentary_ds2 {
+    type: number
+    sql: ${TABLE}.Minutes_SedentaryDS2 ;;
+  }
+
+  dimension: minutes_very_active_ds2 {
+    type: number
+    sql: ${TABLE}.Minutes_Very_ActiveDS2 ;;
+  }
+
+  dimension: month_exer {
+    type: number
+    sql: ${TABLE}.month_exer ;;
+  }
+
+  dimension: norm_heart {
+    type: number
+    sql: ${TABLE}.norm_heart ;;
+  }
+
+  dimension: number_of_awakenings_ds2 {
+    type: number
+    sql: ${TABLE}.Number_of_AwakeningsDS2 ;;
+  }
+
+  dimension: resting_heart {
+    type: number
+    sql: ${TABLE}.resting_heart ;;
+  }
+
+  dimension: sd_norm_heart {
+    type: number
+    sql: ${TABLE}.sd_norm_heart ;;
+  }
+
+  dimension: steps {
+    type: number
+    sql: ${TABLE}.steps ;;
+  }
+
+  dimension: steps_ds2 {
+    type: number
+    sql: ${TABLE}.StepsDS2 ;;
+  }
+
+  dimension: steps_times_distance {
+    type: number
+    sql: ${TABLE}.steps_times_distance ;;
+  }
+
+  dimension: time_in_bed_ds2 {
+    type: number
+    sql: ${TABLE}.Time_in_BedDS2 ;;
+  }
+
+  dimension: weight {
+    type: number
+    sql: ${TABLE}.weight ;;
+  }
+
+  dimension: x1 {
+    type: number
+    sql: ${TABLE}.X1 ;;
+  }
+
+  dimension: year_exer {
+    type: number
+    sql: ${TABLE}.year_exer ;;
+  }
+  measure: count {
+    type: count
+  }
+}
