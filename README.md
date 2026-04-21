@@ -1,7 +1,6 @@
 # Test de Conexión PSC Exitoso
 Este cambio fue enviado desde Looker a través de un túnel privado.
 
-
 <h1><span style="color:#2d7eea">README - Your LookML Project</span></h1>
 
 <h2><span style="color:#2d7eea">LookML Overview</span></h2>
